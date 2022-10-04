@@ -1,0 +1,72 @@
+.container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+    padding: 15px;
+    border: solid 1px gainsboro;
+    border-radius: 5px;
+}
+.info{
+    display: grid;
+    align-content: space-between;
+}
+.images{
+    height: 200px;
+    width: 200px;
+}
+.images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.main{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+.title a{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgb(107,107,107);
+}
+.rate span{
+    display: grid;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 3px;
+    color: white;
+    background-color: rgb(19,52,123);
+    border-radius: 3px;
+}
+.intro{
+    display: grid;
+    justify-content: space-between;
+    grid-auto-flow: column;
+}
+.feature{
+    font-weight: 500;
+    font-size: .9rem;
+}
+.details{
+    font-size: .7rem;
+    font-weight: 500;
+}
+.priceAndAvail{
+    display: grid;
+    justify-items: end;
+    gap: 5px;
+}
+.price{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.avail a{
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    background-color:rgb(48,111,188);
+    padding: 5px 10px;
+    border-radius: 3px;
+}

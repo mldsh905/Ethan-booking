@@ -1,0 +1,143 @@
+.searchBar{
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    font-family: Helvetica,sans-serif;
+}
+.searchBarContainer{
+    height: 50px;
+    width: 100vw;
+    max-width: 1120px;
+    background-color: rgb(244,190,66);
+    display: grid;
+    padding: 0 2px;
+    align-items: center;
+    transform: translateY(-25px);
+    border-radius: 3px;
+    z-index: 1;
+}
+.searchBarList{
+    display: grid;
+    gap: 2px;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 1fr 3fr 1.5fr;
+}
+.searchBarListItem{
+    background-color: white;
+    border-radius: 3px;
+    height: 45px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    position: relative;
+    z-index: 1;
+}
+.searchBarListItem.person{
+    cursor: pointer;
+    min-width: 215px;
+}
+.searchBarListItemIcon{
+    padding: 10px;
+    color: darkgrey;
+}
+.searchBarListItemInput{
+    border: none;
+    height: 30px;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+.rangePicker{
+    min-width: 390px;
+    height: 45px;
+}
+.rangePicker input{
+    font-size: 1rem !important;
+    padding: 0 15px;
+}
+.searchBarListBtn{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(36,88,148);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.searchBarDateBtn{
+    background-color: rgb(36,88,148);
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.searchBarListItemPerson{
+    background-color: white;
+    box-shadow: #a6a6a6 0 0 5px;
+    position: absolute;
+    transform: translateY(100px);
+    width: 200px;
+    height: 150px;
+    display: grid;
+    padding: 0 10px;
+    cursor: auto;
+    align-items: center;
+}
+.searchBarListItemPersonItem{
+    display: grid;
+    /*gap: 10px;*/
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchBarListItemPersonItemOption{
+    width: 100px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.searchBarListItemPersonItemOption button{
+    cursor: pointer;
+}
+.searchBarListItemPersonItemOption span{
+    width: 22px;
+    text-align: center;
+}
+.searchBarListItemPersonItemOption button{
+    width: 28px;
+    border: rgb(36,88,148) solid 1px;
+    background-color: white;
+    padding: 3px;
+}
+.ant-picker-suffix{
+    display: none;
+}
+.searchBarListItemPersonBtn{
+    display: grid;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(36,88,148);
+    color: white;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.searchBarbtn{
+    background-color: rgb(36,87,148);
+    text-align: center;
+    display: grid;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.searchLink{
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    color: white;
+    height: 100%;
+}

@@ -1,0 +1,44 @@
+.wrapper{
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9,33,76);
+    height: 250px;
+    margin-top: 30px;
+    text-align: center;
+}
+.container{
+    width: 40vw;
+    display: grid;
+}
+.title{
+    color: white;
+    font-size: 1.5rem;
+}
+.intro{
+    color: #cccccc;
+    font-size: 1rem ;
+}
+.sub{
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-template-columns: 5fr 2fr;
+    height: 48px;
+    margin-top: 15px;
+}
+.sub input, .sub button{
+    border: none;
+    border-radius: 10px;
+}
+.sub button{
+    background-color: rgb(48,111,188);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.sub input{
+    font-size: 1.2rem;
+    padding: 0 10px;
+}

@@ -1,0 +1,50 @@
+.header{
+    background-color: rgb(18,52,123);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 60px 0;
+}
+.hotelHeader{
+    background-color: rgb(18,52,123);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+.headerContainer{
+    width: 100vw;
+    max-width: 1159px;
+    background-color: rgb(18,52,123);
+    color: white;
+    padding: 0 30px;
+}
+.headerList{
+    display: grid;
+    gap: 5vw;
+    grid-auto-flow: column;
+    justify-content: start;
+}
+.headerListItem{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: solid rgb(18,52,123) 1px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8px;
+    align-items: center;
+}
+.headerListItem.active, .headerListItem:hover{
+    border: solid white 1px;
+}
+.headerH1{
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+.headerDescription{
+    /*font-weight: 320;*/
+    font-size: 1.5rem;
+}

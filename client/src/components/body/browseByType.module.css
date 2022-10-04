@@ -1,0 +1,43 @@
+.wrapper{
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+}
+.container{
+    max-width: 1120px;
+}
+.title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.content{
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    grid-template-columns: repeat(4,1fr);
+}
+.browseItem{
+    display: grid;
+    min-width: 220px;
+    cursor: pointer;
+}
+.browseItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.browseItemTitle{
+    margin-top: 5px;
+    margin-bottom: -3px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.browseItemIntro{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #6b6b6b;
+}

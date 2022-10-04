@@ -1,0 +1,9 @@
+.ant-picker{
+    border: none;
+    width: 240px;
+    height: 27px;
+    /*font-size: 0.5rem;*/
+}
+.ant-picker-input input{
+    font-size: 0.5rem;
+}

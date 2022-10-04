@@ -1,0 +1,35 @@
+.container{
+    background-color: #6b6b6b;
+    height: 100vh;
+    width: 100vw;
+}
+.title{
+    height: 100px;
+    background-color: rgb(48,111,188);
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 100px;
+}
+.body{
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+    height: 50vh;
+    background-color: rgb(255, 196, 0);
+}
+.item{
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+.item input, select{
+    width: 180px;
+    border: solid 1px grey;
+}
+#description{
+    height: 80px;
+
+}

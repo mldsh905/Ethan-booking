@@ -1,0 +1,44 @@
+.wrapper{
+    margin-top: 20px;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    /*background-color: #bfa;*/
+}
+.container{
+    display: grid;
+    gap: 10px;
+}
+.firstLine, .secondLine{
+    display: grid;
+    gap: 10px;
+    max-width: 1120px;
+    grid-auto-flow: column;
+    min-width: 850px;
+}
+.firstLine{
+    grid-template-columns: repeat(2, 1fr);
+}
+.secondLine{
+    grid-template-columns: repeat(3, 1fr);
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.firstLineItem, .secondLineItem{
+    display: grid;
+    position: relative;
+}
+.container span{
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-shadow: grey 0 0 10px;
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 20px
+}

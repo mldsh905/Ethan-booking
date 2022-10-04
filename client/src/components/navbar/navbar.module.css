@@ -1,0 +1,45 @@
+.navbar{
+    height: 70px;
+    background-color: rgb(18,52,123);
+    display: grid;
+    justify-content: center;
+    padding: 20px 0;
+}
+.navContainer{
+    width: 100vw;
+    max-width: 1120px;
+    background-color: rgb(18,52,123);
+    color: white;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    /*margin: 20px 0;*/
+}
+.logo{
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: white;
+}
+.navItems{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+}
+.navButton{
+    padding: 8px 12px;
+    border: none;
+    background-color: white;
+    color: rgb(18,52,123);
+    font-weight: 600;
+    cursor: pointer;
+}
+.navButtonListProperty{
+    padding: 8px 12px;
+    border: 1px solid;
+    color: white;
+    background-color: rgb(18,52,123);
+    font-weight: 600;
+    cursor: pointer;
+}
