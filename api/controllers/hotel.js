@@ -57,9 +57,10 @@ export const countByType = async (req, res) => {
 }
 
 export const findByParams = async (req, res) => {
-    const {min, max, ...others} = req.query;
+    // const {min, max, ...others} = req.query;
     try {
-        const list = await Hotel.find({...others, price:{$gte: min ||0, $lte: max || 99999}});
+        // const list = await Hotel.find({...others, price:{$gte: min ||0, $lte: max || 99999}});
+        const list = await Hotel.find({city: {$regex:req.query.city}, price:{$gte: req.query.min ||0, $lte: req.query.max || 99999}});
         res.json(list)
     } catch (e) {
         res.json(e)
