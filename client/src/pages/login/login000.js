@@ -6,7 +6,7 @@ import axios from "axios";
 const Login000 = () => {
     const handleClick1 = ()=>{
         axios({
-            url:'http://localhost:8800/auth/login',
+            url:`${process.env.REACT_APP_ADDRESS}/auth/login`,
             method:'post',
             data:{username:"admin", password: "123456"},
             withCredentials: true
@@ -18,7 +18,7 @@ const Login000 = () => {
     }
     const handleClick2 = ()=>{
         axios({
-            url:'http://localhost:8800/users',
+            url:`${process.env.REACT_APP_ADDRESS}/users`,
             method:"get",
             withCredentials: true
         })
@@ -29,7 +29,7 @@ const Login000 = () => {
     }
     const handleClick3=()=>{
         axios({
-            url:'http://localhost:8800/auth/logout',
+            url:`${process.env.REACT_APP_ADDRESS}/auth/logout`,
             method:'get',
             // data:{username:"admin", password: "123456"},
             withCredentials: true

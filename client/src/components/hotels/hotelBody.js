@@ -24,7 +24,7 @@ const HotelBody = (props) => {
         , [])
     const fetch = async () => {
         await axios({
-            url: `http://localhost:8800/hotels/find/findByParam?city=${props.props.city}&min=${hotelParams.min}&max=${hotelParams.max}`,
+            url: `${process.env.REACT_APP_ADDRESS}/hotels/find/findByParam?city=${props.props.city}&min=${hotelParams.min}&max=${hotelParams.max}`,
             method: 'get'
         }).then(
             res => setHotelList(res.data),
@@ -41,7 +41,7 @@ const HotelBody = (props) => {
         const handleSubmit = async (e) => {
             e.preventDefault();
             const result = await axios({
-                url: `http://localhost:8800/hotels/find/findByParam?city=${hotelParams.city}&min=${hotelParams.min}&max=${hotelParams.max}`,
+                url: `${process.env.REACT_APP_ADDRESS}/hotels/find/findByParam?city=${hotelParams.city}&min=${hotelParams.min}&max=${hotelParams.max}`,
                 method: 'get'
             }).then(
                 res => setHotelList(res.data),

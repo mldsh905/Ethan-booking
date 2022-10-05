@@ -13,7 +13,7 @@ const Navbar = () => {
         dispatch(setUser(false));
         dispatch(setRegister(false));
         axios({
-            url:'http://localhost:8800/auth/logout',
+            url:`${process.env.REACT_APP_ADDRESS}/auth/logout`,
             method:'get',
             withCredentials: true
         })

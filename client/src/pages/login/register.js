@@ -17,7 +17,7 @@ const Register = () => {
     const user = useSelector(state => state.user);
     const handleLogin = () => {
         axios({
-            url: 'http://localhost:8800/auth/register',
+            url: `${process.env.REACT_APP_ADDRESS}/auth/register`,
             method: 'post',
             data: {username: info.username, password: info.password, email: info.email},
             withCredentials: true

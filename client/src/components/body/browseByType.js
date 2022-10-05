@@ -18,10 +18,10 @@ const BrowseByType = () => {
 
     const countByType = () => {
         axios.all([
-            axios.get('http://localhost:8800/hotels/find/countByType', {params: {type: 'hotel'}}),
-            axios.get('http://localhost:8800/hotels/find/countByType', {params: {type: 'villa'}}),
-            axios.get('http://localhost:8800/hotels/find/countByType', {params: {type: 'apartment'}}),
-            axios.get('http://localhost:8800/hotels/find/countByType', {params: {type: 'resort'}})
+            axios.get(`${process.env.REACT_APP_ADDRESS}/hotels/find/countByType`, {params: {type: 'hotel'}}),
+            axios.get(`${process.env.REACT_APP_ADDRESS}/hotels/find/countByType`, {params: {type: 'villa'}}),
+            axios.get(`${process.env.REACT_APP_ADDRESS}/hotels/find/countByType`, {params: {type: 'apartment'}}),
+            axios.get(`${process.env.REACT_APP_ADDRESS}/hotels/find/countByType`, {params: {type: 'resort'}})
         ]).then(
             res => {
                 setTypeNumber({

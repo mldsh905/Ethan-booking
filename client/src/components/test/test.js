@@ -10,7 +10,7 @@ import SearchItemByType from "../hotels/searchItem";
 const Test = () => {
     const [type,setType] = useState([]);
     const params = new URLSearchParams(useLocation().search);
-    axios.get('http://localhost:8800/hotels/find/findByParam',{params:{type:params.get('type')}})
+    axios.get(`${process.env.REACT_APP_ADDRESS}/hotels/find/findByParam`,{params:{type:params.get('type')}})
         .then(res=> setType(res.data)).catch(e=> console.log(e))
 
     return (

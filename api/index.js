@@ -19,7 +19,7 @@ mongoose.connect(process.env.mongo,{dbName:'test'}, () => {
 
 //use middlewares
 app.use(cors({
-    origin:'http://localhost:3000',
+    origin:['http://localhost:3000','https://ethan-booking-client.onrender.com'],
     credentials:true,
     optionSuccessStatus:200
 }));

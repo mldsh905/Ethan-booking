@@ -17,7 +17,7 @@ const Login = () => {
     const [msg, setMsg] = useState('');
     const handleLogin = () => {
         axios({
-            url: 'http://localhost:8800/auth/login',
+            url: `${process.env.REACT_APP_ADDRESS}/auth/login`,
             method: 'post',
             data: {username: info.username, password: info.password},
             withCredentials: true

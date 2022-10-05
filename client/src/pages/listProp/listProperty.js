@@ -26,7 +26,7 @@ const ListProperty = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         axios({
-            url: 'http://localhost:8800/hotels/',
+            url: `${process.env.REACT_APP_ADDRESS}/hotels/`,
             method: 'post',
             withCredentials: true,
             data: hotel
